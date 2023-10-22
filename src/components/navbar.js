@@ -10,19 +10,19 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white p-4 text-black flex justify-end items-center">
-      <div className="text-2xl font-bold">
-        <img src="C:\Users\kfuku\OneDrive\Desktop\Hack TX 2023\Frontend\HackTX-2023-Carpool\src\car.png" alt="" />
+    <nav className={`p-4 text-black flex justify-start items-center transition duration-300 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+      <div className="text-2xl font-bold flex">
+        <h1 className="justify-self-start">CarLink</h1>
       </div>
       <ul className="flex space-x-4 px-10 justify-end">
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          {/* <Link to="/about">About</Link> */}
         </li>
       </ul>
-      <label className="switch relative inline-block w-16">
+      {/* <label className="switch relative inline-block w-16">
         <input
           type="checkbox"
           checked={isDarkMode}
@@ -30,7 +30,7 @@ function Navbar() {
           className="hidden"
         />
         <span className="slider absolute cursor-pointer block w-10 h-4 bg-gray-400 rounded-full" />
-      </label>
+      </label> */}
     </nav>
   );
 }

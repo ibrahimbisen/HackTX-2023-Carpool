@@ -194,7 +194,7 @@ function PassengerSignUp() {
         <h2 className={style.heading}>Current Passengers</h2>
         <ul>
           {passengers.map((passenger, index) => (
-            <li key={index}>
+            <li className={style.container} key={index}>
               {editPassengerIndex === index ? (
                 <div>
                   {isVerified ? (
