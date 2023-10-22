@@ -25,7 +25,7 @@ function Form({ style }) {
     <div className={style.bg}>
       <div className={style.container}>
         <h3 className={style.heading}>Welcome to CarLink!</h3>
-        <p className={style.text}>Tired of dealing with the hassle of transportation? CarLink is your solution! With our easy-to-use app, you can find rides or offer your car for a carpool adventure. Whether you're a passenger looking for a convenient way to get around town or a driver wanting to share the ride and reduce your expenses, CarLink has you covered. Download now and experience a more efficient and sustainable way to travel!</p>
+        <p className={style.text}>Tired of commuting alone? Our free carpool app makes it easier than ever to share rides with friends and colleagues. Whether you're heading to work, school, or any event, you can now carpool effortlessly and help save the environment. Connect with others in your organization or invite your friends to create carpools that reduce traffic, lower emissions, and save you money. Carpooling has never been this simple and fun!</p>
         <Link to="/driver-signup">
           <button className={style.button}>Driver Sign-Up</button>
         </Link>
