@@ -235,6 +235,7 @@ function PassengerSignUp() {
           </button>
         </div>
       )}
+
       {/* {isConfirmationPopupOpen && (
         <div className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 border border-gray-300 rounded shadow-lg z-10 text-center ${style.popup}`}>
           <p>Do you want to leave or stay in the carpool group?</p>
