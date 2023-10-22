@@ -1,11 +1,21 @@
 import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const style = {
-  bg: `h-screen w-s p-4 bg-gradient-to-r from-[#2F80ED]`,
+  
 };
 
 function App() {
-  return <div className={style.bg}></div>;
+  return <div className={style.bg}>
+    <Header/>
+
+    
+    <Footer/>
+   
+
+
+  </div>;
 }
 
 export default App;
