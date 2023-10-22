@@ -57,12 +57,13 @@ function DriverSignUp() {
       phoneNumber: "",
       address: "",
       seats: 4,
-      pickuputime: input.pickupTime,
+      pickupTaime: "",
       passengers: passengers,
     });
   };
 
   return (
+    <div className={style.bg}>
     <div className={style.container}>
       <h2 className={style.heading}>Driver Sign-Up</h2>
       <form onSubmit={createTodo}>
@@ -112,14 +113,17 @@ function DriverSignUp() {
           Sign Up
         </button>
       </form>
+    </div>
+    <div className={style.container}>
       {signupLink && (
-        <div className={style.count}>
+        <div className={style.button}>
           <p>Your unique signup link is:</p>
-          <Link to={signupLink} className={style.button}>
+          <Link to={signupLink} className={style.count}>
             {signupLink}
           </Link>
         </div>
       )}
+    </div>
     </div>
   );
 }
