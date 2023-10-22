@@ -230,7 +230,7 @@ function PassengerSignUp() {
       {showNoSpotsPopup && (
         <div className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 border border-gray-300 rounded shadow-lg z-10 text-center ${style.popup}`}>
           <p>Carpool group is full</p>
-          <button className="mt-4 px-4 py-2 bg-green-400 text-black rounded hover-bg-blue-700" onClick={closePopup}>
+          <button className={style.button} onClick={closePopup}>
             Close
           </button>
         </div>
